@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+  rel="stylesheet"
+/>
+<html>
+  <head>
+    <title>Photo Gallery</title>
+  </head>
+  <body>
+    <h1>Photo Gallery</h1>
+    <nav>
+      <div>Filter</div>
+      <select name="filters" id="drop">
+        <option value="none">None</option>
+        <option value="outdoors">Outdoors</option>
+        <option value="house">House</option>
+      </select>
+      <button id="apply" type="click">Apply</button>
+    </nav>
+
+    <div class="grid">
+      <img
+        class="card"
+        data-filter="outdoors"
+        src="images/outside/Biskeri-_Camping_I_IMG_7238.jpg"
+        alt="outdoors"
+      />
+      <img
+        class="card"
+        data-filter="house"
+        src="images/houses/pexels-binyaminmellish-186077.jpg"
+        alt="house"
+      />
+      <img
+        class="card"
+        data-filter="outdoors"
+        src="images/outside/mountain-landscape-sunset-background.webp"
+        alt="outdoors"
+      />
+      <img
+        class="card"
+        data-filter="house"
+        src="images/houses/ai-generative-exterior-of-modern-luxury-house-with-garden-and-beautiful-sky-photo (1).jpg"
+        alt="house"
+      />
+      <img
+        class="card"
+        data-filter="outdoors"
+        src="images/outside/lake-ontario.jpg"
+        alt="outdoors"
+      />
+      <img
+        class="card"
+        data-filter="house"
+        src="images/houses/Most-Beautiful-House-in-the-World_0_1200.jpg"
+        alt="house"
+      />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
